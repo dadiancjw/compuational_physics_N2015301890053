@@ -4,7 +4,7 @@ Created on Mon Sep 11 18:57:58 2017
 
 @author: 陇溪首逸
 """
-
+print("蔡佳伟")
 print("     O    O            0               0     \n",
       " OOOOOOOOOOOO        O                O O   \n",
       "    O    O           O  O            O  O   \n",
