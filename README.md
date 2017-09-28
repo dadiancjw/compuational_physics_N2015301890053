@@ -1,6 +1,6 @@
 # Homework list
 [Exercise_01:print my name](https://github.com/dadiancjw/compuational_physics_N2015301890053/blob/master/exercise01.py)
 
-[Exercise_02:animation](https://github.com/dadiancjw/compuational_physics_N2015301890053/blob/master/an.py)
+[Exercise_02:animation](https://github.com/dadiancjw/compuational_physics_N2015301890053/blob/master/my_walking_name_code.py)
 
 [Exercise_03:after-class work:Exercise_1.1&1.6](http://www.jianshu.com/p/c62478ab6f2d)
