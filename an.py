@@ -1,0 +1,21 @@
+import time
+import sys
+for i in range(1,10):
+    print("CJW", end='\r')
+    time.sleep(0.5)
+    print("         CJW", end='\r')
+    time.sleep(1)
+    print("                   CJW", end='\r')
+    time.sleep(1)
+    print("                             CJW", end='\r')
+    time.sleep(1)
+    print("                                        CJW", end='\r')
+    time.sleep(1)
+    print("                                                    CJW", end='\r')
+    time.sleep(1)
+    print("                                                                CJW", end='\r')
+    time.sleep(1)
+    print("                                                                                CJW", end='\r')
+    time.sleep(1)
+    print("                                                                                               CJW", end='\r')
+    time.sleep(1)
