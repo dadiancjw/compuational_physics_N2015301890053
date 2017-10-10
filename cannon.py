@@ -1,41 +1,48 @@
 import math
-import numpy as np
 import pylab as pl
 i=1
-x0=0                  # 初始位置横坐标
-xi=x0
-y0=0                  # 初始位置纵坐标
-yi=y0
-v0=1500               # 加农炮出膛速度在一千多米/秒这个量级
-th=45                 # 出射速度方向于水平面夹角(角度制)
+xi1=xi2=x0=0
+yi1=yi2=y0=1
+v0=1500                     # 加农炮出膛速度在一千多米/秒这个量级
+th=45                       # 出射速度方向于水平面夹角(角度制)
 vx0=v0*(math.cos(th))
 vy0=v0*(math.sin(th))
 g=9.8
 C=1
-A=1
-rho=1
-m=1
-a=6.5*(10**(-3))
+A=0.1
+rho=1.29
+m=1000
+a=0.0065
 alpha=2.5
 T0=300
-t=2*vy0/g
-dt=t/100
-vxi=vx0
-vyi=vy0
-xlist=[0]
-ylist=[0]
-vxlist=[vx0]
-vylist=[vy0]
+xishu=C*A*rho/(2*m)
+vxi1=vxi2=vx0
+vyi1=vyi2=vy0
+xlist1=xlist2=[0]
+ylist1=ylist2=[0]
+t1=132
+dt1=t1/100
+t2=232
+dt2=t2/100
 while i<=100:
-    v=math.sqrt(vxi**2+vyi**2)
-    vxi=vxi-(C*A*rho)/(2*m)*((1-a*yi/T0)**alpha)*v*vxi*dt
-    vyi=vyi-g*dt-(C*A*rho)/(2*m)*((1-a*yi/T0)**alpha)*v*vyi*dt
-    vxlist.append(vxi)
-    vylist.append(vyi)
-    xi=xi+vxi*dt
-    yi=yi+vyi*dt
-    xlist.append(xi)
-    ylist.append(yi)
+    v1=math.sqrt(vxi1**2+vyi1**2)
+    v2=math.sqrt(vxi2**2+vyi2**2)
+    vxi1=vxi1-xishu*((1-a*yi1/T0)**alpha)*v1*vxi1*dt1
+    vyi1=vyi1-g*dt1-xishu*((1-a*yi1/T0)**alpha)*v1*vyi1*dt1
+    xi1=xi1+vxi1*dt1
+    yi1=yi1+vyi1*dt1
+    xlist1.append(xi1)
+    ylist1.append(yi1)
+    vxi2=vxi2-xishu*(math.exp(-yi2/y0))*v2*vxi2*dt2
+    vyi2=vyi2-g*dt2-xishu*(math.exp(-yi2/y0))*v2*vyi2*dt2
+    xi2=xi2+vxi2*dt2
+    yi2=yi2+vyi2*dt2
+    xlist2.append(xi2)
+    ylist2.append(yi2)
     i=i+1
-pl.plot(xlist, ylist)         # 调用pylab的plot函数绘制曲线
-pl.show()             # 显示绘制出的图
+pl.plot(xlist1,ylist1,'r')             # use pylab to plot x and y
+pl.plot(xlist2,ylist2,'r')             # use pylab to plot x and y
+pl.title('Cannon Shell Trajectory')      # give plot a title
+pl.xlabel('X')                           # make axis labels
+pl.ylabel('Y')
+pl.show()                                # 显示绘制出的图
