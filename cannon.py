@@ -28,8 +28,8 @@ vxlist=[vx0]
 vylist=[vy0]
 while i<=100:
     v=math.sqrt(vxi**2+vyi**2)
-    vxi=vxi-((C*A*rho)/(2*m)*(1-a*yi/T0)**alpha)*v*dt
-    vyi=vyi-((g+(C*A*rho)/(2*m)*(1-a*yi/T0)**alpha)*v)*dt
+    vxi=vxi-(C*A*rho)/(2*m)*((1-a*yi/T0)**alpha)*v*vxi*dt
+    vyi=vyi-g*dt-(C*A*rho)/(2*m)*((1-a*yi/T0)**alpha)*v*vyi*dt
     vxlist.append(vxi)
     vylist.append(vyi)
     xi=xi+vxi*dt
