@@ -45,4 +45,13 @@ pl.plot(xlist2,ylist2,'b')                                      # use pylab to p
 pl.title('Cannon Shell Trajectory')                             # give plot a title
 pl.xlabel('X')                                                  # make axis labels
 pl.ylabel('Y')
-pl.show()  
+pl.show()
+
+
+pl.figure(figsize=(13, 7))
+    pl.plot(xlist3,ylist3,'k')             # use pylab to plot x and y
+    pl.title('Cannon Shell Trajectory')      # give plot a title
+    pl.xlabel('X')                           # make axis labels
+    pl.ylabel('Y')
+    pl.show()                               # 显示绘制出的图  
+plot()
