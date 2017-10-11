@@ -1,3 +1,4 @@
+# 选作了教材第2.7题，即根据大气密度的等温 和绝热 变化模型下的阻力来计算加农炮的轨迹。
 import math
 import pylab as pl
 i=1
