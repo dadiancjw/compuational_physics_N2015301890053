@@ -3,6 +3,6 @@
 
 [Exercise_02:my_moving_name_animation](https://v.qq.com/x/page/g0555tzqd9y.html)
 
-[Exercise_03:after-class work:Exercise_1.1&1.6](http://www.jianshu.com/p/c62478ab6f2d)
+[Exercise_03:after-class_work:Exercise_1.1&1.6](http://www.jianshu.com/p/c62478ab6f2d)
 
-[Exercise_04:after-class work:Exercise_2.7](http://www.jianshu.com/p/12cd4553ba39)
+[Exercise_04:after-class_work:Exercise_2.7](http://www.jianshu.com/p/12cd4553ba39)
