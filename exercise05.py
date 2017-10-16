@@ -4,14 +4,14 @@ i=1
 v0=40
 xi=x0=0
 yi=y0=0
-z0=0
+zi=z0=0
 g=9.8
 vxi=v0*(math.cos(20*math.pi/180))
 vyi=v0*(math.sin(20*math.pi/180))
 vzi=0
 xlist=[x0]
-ylist=[x0]
-zlist=[0]
+ylist=[y0]
+zlist=[z0]
 t=21
 dt=t/1000
 while i<=1000:
