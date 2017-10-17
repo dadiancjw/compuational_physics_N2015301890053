@@ -1,8 +1,8 @@
 import math
 import pylab as pl
 i=1
-xi1=xi2=xi3=xi4=xi5=x0=0
-yi1=yi2=yi3=yi4=yi5=y0=0
+xi1=0
+yi1=0
 v0=1500
 g=9.8
 C=1                                                
@@ -14,35 +14,11 @@ alpha=2.5
 T0=300
 xishu=C*A*rho/(2*m)
 vxi1=v0*(math.cos(47*math.pi/180))
-vxi2=v0*(math.cos(48*math.pi/180))
-vxi3=v0*(math.cos(49*math.pi/180))
-vxi4=v0*(math.cos(50*math.pi/180))
-vxi5=v0*(math.cos(51*math.pi/180))
 vyi1=v0*(math.sin(47*math.pi/180))
-vyi2=v0*(math.sin(48*math.pi/180))
-vyi3=v0*(math.sin(49*math.pi/180))
-vyi4=v0*(math.sin(50*math.pi/180))
-vyi5=v0*(math.sin(51*math.pi/180))
 xlist1=[x0]
-xlist2=[x0]
-xlist3=[x0]
 ylist1=[y0]
-ylist2=[y0]
-ylist3=[y0]
-xlist4=[x0]
-xlist5=[x0]
-ylist4=[y0]
-ylist5=[y0]
 t1=121
 dt1=t1/10000
-t2=122
-dt2=t2/10000
-t3=122
-dt3=t3/10000
-t4=125
-dt4=t4/10000
-t5=126
-dt5=t5/10000
 while i<=10000:
     v1=math.sqrt(vxi1**2+vyi1**2)
     vxi1=vxi1-xishu*((1-a*yi1/T0)**alpha)*v1*vxi1*dt1
@@ -51,50 +27,9 @@ while i<=10000:
     yi1=yi1+vyi1*dt1
     xlist1.append(xi1)
     ylist1.append(yi1)
-    v2=math.sqrt(vxi2**2+vyi2**2)
-    vxi2=vxi2-xishu*((1-a*yi2/T0)**alpha)*v2*vxi2*dt2
-    vyi2=vyi2-g*dt2-xishu*((1-a*yi2/T0)**alpha)*v2*vyi2*dt2
-    xi2=xi2+vxi2*dt2
-    yi2=yi2+vyi2*dt2
-    xlist2.append(xi2)
-    ylist2.append(yi2)
-    v3=math.sqrt(vxi3**2+vyi3**2)
-    vxi3=vxi3-xishu*((1-a*yi3/T0)**alpha)*v3*vxi3*dt3
-    vyi3=vyi3-g*dt3-xishu*((1-a*yi3/T0)**alpha)*v3*vyi3*dt3
-    xi3=xi3+vxi3*dt3
-    yi3=yi3+vyi3*dt3
-    xlist3.append(xi3)
-    ylist3.append(yi3)
-    v4=math.sqrt(vxi4**2+vyi4**2)
-    vxi4=vxi4-xishu*((1-a*yi4/T0)**alpha)*v4*vxi4*dt4
-    vyi4=vyi4-g*dt4-xishu*((1-a*yi4/T0)**alpha)*v4*vyi4*dt4
-    xi4=xi4+vxi4*dt4
-    yi4=yi4+vyi4*dt4
-    xlist4.append(xi4)
-    ylist4.append(yi4)
-    v5=math.sqrt(vxi5**2+vyi5**2)
-    vxi5=vxi5-xishu*((1-a*yi5/T0)**alpha)*v5*vxi5*dt5
-    vyi5=vyi5-g*dt5-xishu*((1-a*yi5/T0)**alpha)*v5*vyi5*dt5
-    xi5=xi5+vxi5*dt5
-    yi5=yi5+vyi5*dt5
-    xlist5.append(xi5)
-    ylist5.append(yi5)
-    v6=math.sqrt(vxi6**2+vyi6**2)
-    vxi6=vxi6-xishu*((1-a*yi6/T0)**alpha)*v6*vxi6*dt6
-    vyi6=vyi6-g*dt6-xishu*((1-a*yi6/T0)**alpha)*v6*vyi6*dt6
-    xi6=xi6+vxi6*dt6
-    yi6=yi6+vyi6*dt6
-    xlist6.append(xi6)
-    ylist6.append(yi6)
     i=i+1
 pl.figure(figsize=(20, 11))
-p1,=pl.plot(xlist1,ylist1,'r')
-p2,=pl.plot(xlist2,ylist2,'b')
-p3,=pl.plot(xlist3,ylist3,'y')
-p4,=pl.plot(xlist4,ylist4,'g')
-p5,=pl.plot(xlist5,ylist5,'c')
-pz,=pl.plot([0,42000],[0,0],'r')
-pl.legend([pz,p1,p2,p3,p4,p5],['Horizon Line','47','48','49','50','51'],fontsize=24,loc="upper right")
+pl.plot(xlist1,ylist1,'r')
 pl.title('Cannon Shell Trajectory',fontsize=40)
 pl.xlabel('Horizon Distance',fontsize=26)
 pl.ylabel('Height',fontsize=30)
