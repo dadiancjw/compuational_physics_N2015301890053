@@ -8,3 +8,5 @@
 [Exercise_04:after-class_work:Exercise_2.7](http://www.jianshu.com/p/12cd4553ba39)
 
 [Exercise_05:after-class_work:Exercise_2.20](http://www.jianshu.com/p/7826117059a8)
+
+[Exercise_06:after-class_work:Exercise_3.10&3.13](https://www.zybuluo.com/dadiancjw/note/916990)
