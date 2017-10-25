@@ -9,4 +9,4 @@
 
 [Exercise_05:after-class_work:Exercise_2.20](http://www.jianshu.com/p/7826117059a8)
 
-[Exercise_06:after-class_work:Exercise_3.10&3.13](https://www.zybuluo.com/dadiancjw/note/916990)
+[Exercise_06:after-class_work:Exercise_3.10&3.13](http://www.jianshu.com/p/416a87bfe299)
