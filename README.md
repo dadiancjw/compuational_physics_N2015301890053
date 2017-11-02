@@ -12,3 +12,5 @@
 [Exercise_06:after-class_work:Exercise_3.10](http://www.jianshu.com/p/416a87bfe299)
 
 [Exercise_07:after-class_work](http://www.jianshu.com/p/ccbd3f3f0422)
+
+[Exercise_08:Midterm_work:pygame_animation](http://www.jianshu.com/p/ca4284d42140)
