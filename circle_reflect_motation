@@ -1,7 +1,7 @@
 import math
 import pylab as pl
 b=50
-theta=20
+theta=10
 v=1
 a=(b+90-theta/2)*math.pi/180
 vx=v*math.cos(a)
@@ -10,13 +10,13 @@ vxlist=[vx]
 vylist=[vy]
 x=math.cos(b*math.pi/180-math.pi/2)
 y=math.sin(b*math.pi/180-math.pi/2)
-dt=0.02
+dt=0.001
 xlist=[x]
 ylist=[y]
 i=1
-while i<2000:
-    if x*x+y*y>=1:
-        b=(180-theta+b)*math.pi/180
+while i<50000:
+    if x*x+y*y>1:
+        b=180-theta+b
         a=(b+90-theta/2)*math.pi/180
         vx=v*math.cos(a)
         vy=v*math.sin(a)
@@ -28,7 +28,7 @@ while i<2000:
     ylist.append(y)
     i=i+1
 pl.figure(figsize=(14, 14))
-pl.plot(xlist,ylist,'ro')
+pl.plot(xlist,ylist,'r')
 pl.title('vy-y(theta=20 Degree)',fontsize=60)
 pl.xlabel('x',fontsize=50)
 pl.ylabel('y',fontsize=50)
