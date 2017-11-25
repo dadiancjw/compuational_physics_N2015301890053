@@ -3,7 +3,7 @@ import pygame, sys
 from pygame.locals import *
 # 初始化pygame
 pygame.init()
-# 设置帧率（屏幕每秒刷新的次数）
+# 设置帧率
 FPS = 30
 # 获得pygame的时钟
 fpsClock = pygame.time.Clock()
@@ -13,7 +13,7 @@ screen = pygame.display.set_mode((1200, 600), 0, 32)
 pygame.display.set_caption('Pygame_Animation')
 # 定义颜色
 WHITE =(255, 255, 255)
-# 加载一张图片（所用到的的图片请参考1.5代码获取）
+# 加载一张图片
 img = pygame.image.load('chrome.png')
 # 初始化图片的位置
 imgx0=10
@@ -29,7 +29,6 @@ direction = 'right'
 while True:
     # 每次都要重新绘制背景白色
     screen.fill(WHITE)
-    # 判断移动的方向，并对相应的坐标做加减
     if direction == 'right':
         imgx=imgx0+4.6*i
         imgy=imgy0-4.6*i+0.02*i*i
