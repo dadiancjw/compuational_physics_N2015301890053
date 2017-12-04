@@ -16,3 +16,7 @@
 [Exercise_08:Midterm_work:pygame_animation](http://www.jianshu.com/p/ca4284d42140)
 
 [Exercise_09:after-class_work:Exercise_3.32](http://www.jianshu.com/p/b0409135de0e)
+
+[Exercise_10:after-class_work:Exercise_4.32](http://www.jianshu.com/p/d94f7ac65c9b)
+
+[Exercise_11:after-class_work:Exercise_5.32](http://www.jianshu.com/p/55a3805c36ed)
