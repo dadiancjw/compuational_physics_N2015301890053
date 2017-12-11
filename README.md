@@ -21,4 +21,4 @@
 
 [Exercise_11:after-class_work:Exercise_5.1&Addition](http://www.jianshu.com/p/55a3805c36ed)
 
-[Exercise_12:after-class_work:Some_question_in_Chapter5&6](http://www.jianshu.com/p/8473e6cd3fde)
+[Exercise_12:after-class_work:Exercise_6.X](http://www.jianshu.com/p/8473e6cd3fde)
