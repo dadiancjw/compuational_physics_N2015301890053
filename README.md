@@ -24,3 +24,6 @@
 [Exercise_12:after-class_work:Exercise_6.X](http://www.jianshu.com/p/8473e6cd3fde)
 
 [Final_term_work](https://www.jianshu.com/p/20bc2ea02145)
+
+（说明：
+原来的几个作业因为对问题认识不深等原因完成度很低，这次会和期末作业一起补全，之前完成度不好会被更新的作业有Exercise_10和Exercise_12，烦请老师点击链接重新阅读一遍        2017/12/25 蔡佳伟）
